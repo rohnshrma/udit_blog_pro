@@ -1,0 +1,23 @@
+<%- include("partials/header") -%>
+<div class="contact">
+  <h2>Write New Blogs Everyday</h2>
+  <form action="/compose" method="post">
+    <div class="form-group">
+      <input
+        type="text"
+        name="title"
+        class="form-control"
+        placeholder="Blog Title"
+      />
+    </div>
+    <div class="form-group">
+      <textarea
+        name="content"
+        class="form-control"
+        placeholder="Blog Content"
+      ></textarea>
+    </div>
+    <button class="btn btn-block btn-success">Submit</button>
+  </form>
+</div>
+<%- include("partials/footer") -%>
